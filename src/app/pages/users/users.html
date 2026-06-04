@@ -1,0 +1,9 @@
+@if (loading()) {
+  <p>Loading users</p>
+} @else {
+  <ul>
+    @for (user of users(); track user.id) {
+      <li>{{ user.name }}</li>
+    }
+  </ul>
+}

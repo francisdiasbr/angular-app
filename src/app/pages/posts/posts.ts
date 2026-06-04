@@ -1,9 +1,9 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { PostsService } from '../../services/posts';
-
+import { PostCard } from '../post-card/post-card';
 @Component({
   selector: 'app-posts',
-  imports: [],
+  imports: [PostCard],
   templateUrl: './posts.html',
   styleUrl: './posts.scss',
 })

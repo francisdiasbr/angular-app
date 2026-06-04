@@ -3,7 +3,9 @@
 } @else {
   <ul>
     @for (post of posts(); track post.id) {
-      <li>{{ post.title }}</li>
+      <li>
+        <app-post-card [post]="post"></app-post-card>
+      </li>
     }
   </ul>
 }

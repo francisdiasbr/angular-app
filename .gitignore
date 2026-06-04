@@ -29,6 +29,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Compodoc
+/documentation
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/

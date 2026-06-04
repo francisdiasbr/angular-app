@@ -1,0 +1,4 @@
+{
+  "tsconfig": "tsconfig.app.json",
+  "exclude": ["documentation"]
+}

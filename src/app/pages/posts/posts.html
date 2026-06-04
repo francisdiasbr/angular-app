@@ -1,11 +1,14 @@
 @if (loading()) {
-  <p>Loading posts...</p>
+<p>Loading posts...</p>
 } @else {
+<div class="posts">
+  <h1>Posts</h1>
   <ul>
     @for (post of posts(); track post.id) {
-      <li>
-        <app-post-card [post]="post"></app-post-card>
-      </li>
+    <li>
+      <app-post-card [post]="post"></app-post-card>
+    </li>
     }
   </ul>
+</div>
 }

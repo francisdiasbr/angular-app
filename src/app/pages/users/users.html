@@ -1,9 +1,12 @@
 @if (loading()) {
   <p>Loading users</p>
 } @else {
-  <ul>
-    @for (user of users(); track user.id) {
-      <li>{{ user.name }}</li>
-    }
-  </ul>
+  <div class="users">
+    <h1>Users</h1>
+    <ul>
+      @for (user of users(); track user.id) {
+        <li>{{ user.name }}</li>
+      }
+    </ul>
+  </div>
 }
